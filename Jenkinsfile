@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm cache clean'
-                sh 'npm install'
+                sh 'sudo npm install'
             }
         }
         stage('Test') {
